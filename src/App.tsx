@@ -1,6 +1,6 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import HomePage from "./components/HomePage";
-import Products from "./components/Products";
+import ProductPage from "./components/ProductPage";
 
 function App() {
   return (
@@ -9,7 +9,7 @@ function App() {
       <Router>
         <Routes>
           <Route path="/" element={<HomePage />} />
-          <Route path="/products" element={<Products />} />
+          <Route path="/products" element={<ProductPage />} />
         </Routes>
       </Router>
     </>
@@ -25,7 +25,6 @@ function Logo() {
         top: 30,
         right: 55,
         zIndex: 100,
-        color: "white",
       }}
     >
       <h2>Z E V i</h2>
